@@ -1,0 +1,47 @@
+.screen {
+	min-height: 100vh;
+	> .card-body {
+		padding-top: 96px;
+	}
+}
+.media img {
+	width: 4rem;
+}
+#mission {
+	width: 100%;
+	height: 100vh;
+	background: url(../images/bg.jpg) top center;
+	background-size: cover;
+  position: relative;
+  background-color: darkgreen;
+  color: aliceblue;
+}
+.mission-container {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.shadow-sm{
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+#activites{
+  background-color: darkgreen;
+  padding-bottom: 10rem;
+  padding-top:10rem;
+}
+#entroll{
+  padding-bottom: 10rem;
+  padding-top:10rem;
+}
+#contributions{
+  padding-bottom: 10rem;
+}
+
+// git@github.com:Iyarkai/website.git
