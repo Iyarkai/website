@@ -18,8 +18,8 @@ module.exports = {
      |--------------------------------------------------------------------------
      | https://github.com/shakyShane/browser-sync/wiki/options#wiki-files
      */
-    files: ["dist/css/*.css", "dist/js/*.js","dist/**/*.html","dist/**/*.pho"],
+    files: ["docs/css/*.css", "docs/js/*.js","docs/**/*.html","docs/**/*.pho"],
     proxy: "localhost:800",
-    serveStatic: ['dist']
+    serveStatic: ['docs']
 
 };

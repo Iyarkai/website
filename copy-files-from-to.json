@@ -2,11 +2,11 @@
     "copyFiles": [
         {
             "from": "node_modules/@fortawesome/fontawesome-free/webfonts/**",
-            "to": "dist/webfonts"
+            "to": "docs/webfonts"
         },
         {
             "from": "src/images/**",
-            "to": "dist/images"
+            "to": "docs/images"
         }
     ]
 }
