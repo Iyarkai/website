@@ -7,6 +7,11 @@
         {
             "from": "src/images/**",
             "to": "docs/images"
+        },
+        {
+          "from": "src/lib/**",
+          "to": "docs/lib"
         }
+
     ]
 }
