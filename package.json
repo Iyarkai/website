@@ -49,10 +49,10 @@
     "uglify-es": "^3.3.9"
   },
   "scripts": {
-    "clean": "rimraf docs",
+    "clean": "rimraf dist",
     "copy": "copy-files-from-to",
-    "optimizecss": "postcss docs/css/app.css -c postcss.config.js -o docs/css/app.css",
-    "scss": "sass src/scss:docs/css",
+    "optimizecss": "postcss dist/css/app.css -c postcss.config.js -o dist/css/app.css",
+    "scss": "sass src/scss:dist/css",
     "lint": "eslint src/js || true",
     "lint-scss": "stylelint src/scss/*.scss --syntax scss  || eslint src/js",
     "rollup": "rollup -c",

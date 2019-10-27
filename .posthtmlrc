@@ -1,6 +1,6 @@
 {
   "input": "src/*.html",
-  "output": "docs",
+  "output": "dist",
   "plugins": {
     "posthtml-modules":{
         root: 'html-modules'
