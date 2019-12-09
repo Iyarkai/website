@@ -18705,10 +18705,6 @@ h6 {
   font-weight: normal;
 }
 
-.sf-arrows ul .sf-with-ul:after {
-  content: "";
-}
-
 /* Nav Meu Container */
 #nav-menu-container {
   float: right;
@@ -19903,6 +19899,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #header #logo img {
     max-height: 40px;
+    display: none;
   }
 
   #intro h2 {
