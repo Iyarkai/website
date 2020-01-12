@@ -1412,11 +1412,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #eee;
 }
 
-#footer .footer-top .social-links a {
+.social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #333;
-  color: #eee;
+  background: #18d26e;
+  color: #fff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1427,9 +1427,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#footer .footer-top .social-links a:hover {
-  background: #18d26e;
-  color: #fff;
+.social-links a:hover {  
+  color:#18d26e;
+  background:#FFF;
 }
 
 #footer .footer-top h4 {
