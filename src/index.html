@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>Iyarkai</title>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="" name="keywords">
 	<meta content="" name="description">
@@ -86,15 +85,16 @@
 
 
 								<p>
-									<button type="button" class="btn btn-primary">
-											<i class="fa fa-twitter"></i> Volunteer
-									</button>
-									<button type="button" class="btn btn-success">
-											<i class="fas fa-rupee-sign"></i> Donate
+									<a type="button" class="btn btn-primary" href="http://www.twitter.com/iyarkai3" target="_blank">
+										<i class="fa fa-twitter"></i> Volunteer
+									</a>
+									<button type="button" class="btn btn-success" data-toggle="modal"
+										data-target="#donate" data-whatever="@donate">
+										<i class="fas fa-rupee-sign"></i> Donate
 									</button>
 								</p>
 
-								
+
 							</div>
 						</div>
 					</div>
@@ -212,10 +212,6 @@
 					concerned. We are here to develop a pleasant natural habitat for all living beings on the earth
 					without any kind of differences or conflicts with anyone/anything on it.</p> -->
 				</header>
-				<a class="btn-get-started scrollto" type="button" data-toggle="modal" data-target="#Volunteer"
-					data-whatever="@Volunteer">Volunteer</a>
-
-
 				<!-- <div class="row about-cols">
 
 					<div class="col-md-4 wow fadeInUp">
@@ -736,67 +732,6 @@
 	</div>
 
 
-	<!-- modal for voluntiers-->
-	<div class="modal fade" id="Volunteer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title bold" id="exampleModalLabel">We are heartly welcomming volunteers</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div id="meeagebody" class="modal-body">
-					<form>
-						<div class="form-row">
-							<div class="form-group col-md-12">
-								<label for="name">Name</label>
-								<input type="text" class="form-control" id="name" placeholder="Name">
-							</div>
-							<div class="form-group col-md-6">
-								<label for="email">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-							<div class="form-group col-md-6">
-								<label for="mobile">Phone</label>
-								<input type="text" class="form-control" id="mobile" placeholder="Phone">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputAddress">Address</label>
-							<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-						</div>
-						<div class="form-group">
-							<label for="inputAddress2">Address 2</label>
-							<input type="text" class="form-control" id="inputAddress2"
-								placeholder="Apartment, studio, or floor">
-						</div>
-						<div class="form-row">
-							<div class="form-group col-md-6">
-								<label for="inputCity">City</label>
-								<input type="text" class="form-control" id="inputCity">
-							</div>
-							<div class="form-group col-md-4">
-								<label for="inputState">State</label>
-								<input type="text" class="form-control" id="inputState">
-							</div>
-							<div class="form-group col-md-2">
-								<label for="inputZip">Zip</label>
-								<input type="text" class="form-control" id="inputZip">
-							</div>
-						</div>
-					</form>
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="submit" class="btn btn-primary" onclick="sendEmail()">Send</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<!-- JavaScript Libraries -->
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -816,34 +751,6 @@
 
 	<!-- Template Main Javascript File -->
 	<script src="js/bundle.min.js"></script>
-	<script type="text/javascript">
-		function sendEmail() {
-			const data = {
-				name: $('#name').val(),
-				email: $('#email').val(),
-				mobile: $('#mobile').val(),
-				inputAddress: $('#inputAddress').val(),
-				inputAddress2: $('#inputAddress2').val(),
-				inputCity: $('#inputCity').val(),
-				inputState: $('#inputState').val(),
-				inputZip: $('#inputZip').val(),
-			}
-			// console.log(data, "sfdsfdsff")
-			Email.send({
-				Host: "smtp.gmail.com",
-				Username: "email for karthick",
-				Password: "and also need password",
-				To: data.email,
-				From: "iyarkail@gmail.com",
-				Subject: "Volunteer application",
-				Body: JSON.stringify(data),
-			})
-				.then(function (message) {
-					alert("mail sent successfully")
-				});
-		}
-
-	</script>
 </body>
 
 </html>
