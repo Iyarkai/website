@@ -168,6 +168,33 @@ h6 {
   margin: 0;
 }
 
+#header ol li button[type="submit"]{
+  background: yellow;
+}
+
+#header .donate-btn{
+  border: none;
+  padding: 5px 16px;
+  background-color: #18d26e;
+  color: white;
+  border-radius: 2px;
+}
+
+#header .donate-btn:hover{
+  background-color: #13a456;
+}
+
+#header .volunteer-btn{
+  border: none;
+  padding: 5px 12px;
+  margin: 0px 10px;
+  background-color: #337ab7;
+  border-radius: 2px;
+}
+
+#header .volunteer-btn:hover{
+  background-color: #286090;
+}
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -379,7 +406,7 @@ h6 {
 /* Nav Meu Styling */
 
 .nav-menu a {
-  padding: 0 8px 10px 8px;
+  padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
   color: #fff;
@@ -471,6 +498,7 @@ h6 {
 
 #mobile-nav ul li {
   position: relative;
+  margin-top: 24px;
 }
 
 #mobile-nav ul li a {
@@ -478,7 +506,7 @@ h6 {
   font-size: 13px;
   text-transform: uppercase;
   overflow: hidden;
-  padding: 10px 22px 10px 15px;
+  padding: 0px 8px 0px 8px;
   position: relative;
   text-decoration: none;
   width: 100%;
@@ -487,6 +515,33 @@ h6 {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
+
+#mobile-nav .donate-btn{
+  border: none;
+  padding: 5px 16px;
+  background-color: #18d26e;
+  color: white;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+#mobile-nav .donate-btn:hover{
+  background-color: #13a456;
+}
+
+#mobile-nav .volunteer-btn{
+  border: none;
+  padding: 5px 12px;
+  margin: 0px 10px;
+  background-color: #337ab7;
+  border-radius: 2px;
+}
+
+#mobile-nav .volunteer-btn:hover{
+  background-color: #286090;
+}
+
+
 
 #mobile-nav ul li a:hover {
   color: #18d26e;
@@ -1075,6 +1130,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
+.modal-dialog{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.modal-content{
+  width: 58vw;
+}
 /* Clients Section
 --------------------------------*/
 
@@ -1604,4 +1668,5 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mobile-nav-toggle {
     display: inline;
   }
+  
 }
