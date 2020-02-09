@@ -19977,6 +19977,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mobile-nav-toggle {
     display: inline;
   }
+
+  #portfolio .portfolio-container .modal-content {
+    width: 100vw;
+  }
+
+  #portfolio .portfolio-container .modal-content .d-block {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
