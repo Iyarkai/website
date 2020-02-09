@@ -1615,6 +1615,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
+  
 }
 
 @media (min-width: 992px) {
@@ -1668,5 +1669,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mobile-nav-toggle {
     display: inline;
   }
-  
+  #portfolio .portfolio-container .modal-content{
+    width: 100vw;
+  }
+  #portfolio .portfolio-container .modal-content .d-block{
+    width: 400px;
+  }
 }
