@@ -18599,6 +18599,10 @@ h6 {
   text-align: center;
 }
 
+#intro .color {
+  color: #4B0082;
+}
+
 #intro h2 {
   color: #fff;
   margin-bottom: 30px;
