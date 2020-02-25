@@ -19794,7 +19794,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #eee;
 }
 
-.social-links a {
+.links a {
   font-size: 18px;
   display: inline-block;
   background: #18d26e;
@@ -19809,7 +19809,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-.social-links a:hover {
+.links a:hover {
   color: #18d26e;
   background: #FFF;
 }
